@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>testRadio</name>
+        <scoped_name>x_ouhs2_risk_asses_testRadio</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2018-02-02 17:53:55</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>53cde4254f0c53407b92d49f0310c799</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>testRadio</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_ui_macro_53cde4254f0c53407b92d49f0310c799</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2018-03-21 17:37:15</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<j:set var="jvar_tableName" value="x_ouhs2_risk_asses_risk_assessment_services" />
+	
+<!-- 	<g:call function="x_ouhs2_risk_asses_Render_Radio_Buttons.xml" id="network" radio_class="customRadio" label_class="customLabel" label="This product connects to the OUHSC network and/or communicates with any computer" value="" replace="${jvar_tableName}.u_network" /> -->
+	
+	<g:evaluate object="true">
+			var radiobuttons = [
+			{ id: 'radio_1', class: 'HSCRadio', name: 'radioGroup', value: 'rdo1', label: 'Radio 1 t', label_class: 'HSCRadioLabel' },
+			{ id: 'radio_2', class: 'HSCRadio', name: 'radioGroup', value: 'rdo2', label: 'Radio 2 t', label_class: 'HSCRadioLabel' },
+			{ id: 'radio_3', class: 'HSCRadio', name: 'radioGroup', value: 'rdo3', label: 'Radio 3 t', label_class: 'HSCRadioLabel' }
+		];
+			radiobuttons;			
+	</g:evaluate>
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Radio_Buttons.xml" groupid="testrdogroup" grouplabel="Does the data set include any of the following (test)" selected="" replace="${jvar_tableName}.u_physical_location" radiobuttons="${radiobuttons}" radiostyle="horizontal" />
+	
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_employment_change_documented" label="Are roles and responsibilities for following performing employment termination o" language="en" table="x_ouhs2_risk_asses_risk_assessment_services">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_employment_change_documented</element>
+            <help/>
+            <hint/>
+            <label>Are roles and responsibilities for following performing employment termination o</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <plural>Are roles and responsibilities for following performing employment termination o</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2017-11-28 20:17:47</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>e9e99dd84f32cf007b92d49f0310c777</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Are roles and responsibilities for following performing employment termination o</sys_name>
+            <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+            <sys_update_name>sys_documentation_x_ouhs2_risk_asses_risk_assessment_services_u_employment_change_documented_en</sys_update_name>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2017-11-28 20:17:47</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_sensitivedata" label="This product interacts with sensitive data." language="en" table="x_ouhs2_risk_asses_risk_assessment_services">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_sensitivedata</element>
+            <help/>
+            <hint/>
+            <label>This product interacts with sensitive data.</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <plural>This product interacts with sensitive data.s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2017-10-26 19:36:30</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>dbf357e94f468b80196cd0af0310c734</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>This product interacts with sensitive data.</sys_name>
+            <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+            <sys_update_name>sys_documentation_x_ouhs2_risk_asses_risk_assessment_services_u_sensitivedata_en</sys_update_name>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2017-10-26 19:36:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

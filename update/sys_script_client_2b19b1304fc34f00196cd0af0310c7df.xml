@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_auth_users_unique_id</field>
+        <global>true</global>
+        <messages/>
+        <name>Load SI Test</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+		
+	
+	
+   var ga = new GlideAjax('ES_sA');
+ga.addParam('sysparm_name','helloWorld');
+ga.addParam('sysparm_user_name',"Nathan");
+//ga.getXMLWait();
+//alert(ga.getAnswer());
+ga.getXML(HelloWorldParse);
+ 
+ 
+function HelloWorldParse(response) {
+   var answer = response.responseXML.documentElement.getAttribute("answer");
+   alert(answer);
+}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2017-12-12 22:07:20</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>2b19b1304fc34f00196cd0af0310c7df</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Load SI Test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_script_client_2b19b1304fc34f00196cd0af0310c7df</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2017-12-18 20:43:24</sys_updated_on>
+        <table>x_ouhs2_risk_asses_risk_assessment_services</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

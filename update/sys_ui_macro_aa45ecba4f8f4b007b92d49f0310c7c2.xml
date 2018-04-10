@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <category>general</category>
+        <description>checkboxes with better formatting and accessibility</description>
+        <media_type/>
+        <name>Checkboxes</name>
+        <scoped_name>x_ouhs2_risk_asses_Checkboxes</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2017-12-18 21:08:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>aa45ecba4f8f4b007b92d49f0310c7c2</sys_id>
+        <sys_mod_count>251</sys_mod_count>
+        <sys_name>Checkboxes</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_ui_macro_aa45ecba4f8f4b007b92d49f0310c7c2</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2018-03-22 13:22:29</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+<!-- This code will eventually get moved to a checkbox macro that can be called by other macros. -->
+	<g:function id="REQUIRED" label="REQUIRED" value="" checked=""/>
+	
+	<p>id = ${jvar_id}, label = ${jvar_label}</p>
+	
+	
+<g:evaluate var="jvar_items" object="true">
+        var cbItems = [
+			{ id: 'u_first_cb', label: 'First Check Box', value: '', checked: '', assignTo: 'x_ouhs2_risk_asses_risk_assessment_services.u_network' },
+			{ id: 'u_second_cb', label: 'Second Check Box', value: 'true', checked: 'checked' },
+			{ id: 'u_third_cb', label: '3rd Check Box', value: 'true', checked: 'checked' }
+		];
+		cbItems;
+    </g:evaluate>
+	
+<!-- 	This is what the script will look like -->
+	<!-- <script>
+		$(document).ready(function() {
+			$("${id}").click(function() {
+				g_form.setValue("${assignTo}, ${id}.value);
+			});
+		});
+	</script> -->
+	<g:evaluate var="jvar_script" object="true">
+		var script = '$(document).ready(function() {';	
+	</g:evaluate>
+	
+	
+	
+	<j:forEach items="${cbItems}" var="jvar_item">
+		
+		<g:evaluate jelly="true">
+			var id = jelly.jvar_item.id;
+			var label = jelly.jvar_item.label;
+			var cbValue = jelly.jvar_item.value;
+			var checked = jelly.jvar_item.checked;
+			var assignTo = jelly.jvar_item.assignTo;
+		
+		</g:evaluate>
+		<g:evaluate>
+		script += '$("#${id}").click(function() {';
+		script += 'g_form.setValue("${assignTo}", "${cbValue}"); ';
+		script += '});';
+			
+		</g:evaluate>
+		
+	<!-- 	<g2:evaluate jelly="true">
+			var id2 = jelly.jvar_item.id;
+			var label2 = jelly.jvar_item.label;
+			var cbValue2 = jelly.jvar_item.value;
+		</g2:evaluate>
+		
+		<p>id2 = $[id2], label2 = $[label2]</p> -->
+		
+		
+		<div class="col-xs-12 input_controls checkboxContainer">
+			<!-- <j:if test="${cbValue == ''}">
+				<input type="checkbox" id="${id}" class="pull-left" />
+			</j:if>
+
+			<j:if test="${!empty(cbValue)}">
+				<input type="checkbox" id="${id}" class="pull-left" checked="checked" />
+			</j:if>
+			<label for="${id}" class="form-label">${label}</label> -->
+			
+			
+		<span class="input-group-checkbox">
+		<j:choose>
+			<j:when test="${checked == ''}">
+				<input type="checkbox" id="${id}" class="checkbox pull-left" />
+				<label for="${id}" class="checkbox-label">${label}</label>
+<!-- 				<g:ui_checkbox name="timecard_active" value="x" checked="checked" label="This is a test of the checkbox g:ui" /> -->
+			</j:when>
+			<j:otherwise>
+				<input type="checkbox" id="${id}" value="${cbValue}" class="checkbox pull-left" checked="checked" />
+				<label for="${id}" class="checkbox-label">${label}</label>
+<!-- 				<g:ui_form> -->
+<!-- 		<g:ui_checkbox name="timecard_active" value="x" label="This is a test of the checkbox g:ui" /> -->
+<!-- 	</g:ui_form> -->
+			</j:otherwise>
+		</j:choose>		
+		</span>
+<!-- 			<label for="ni.timecard_active">Timecard test</label> -->
+<!-- 			<label for="${id}" class="checkbox-label">${label}</label> -->
+<!-- 			<label for="${id}" class="form-label">${label}</label> -->
+		</div>
+	</j:forEach>
+	
+	<g2:evaluate>
+		script += "});"
+	</g2:evaluate>
+	
+	<!-- <script>
+		$(document).ready(function () {
+			alert(script);
+		});
+	</script> -->
+	script = $[script]
+</j:jelly>
+]]></xml>
+    </sys_ui_macro>
+</record_update>

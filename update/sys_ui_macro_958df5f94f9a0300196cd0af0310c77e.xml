@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>CSS Styles for Risk Assessment Services Application</description>
+        <media_type/>
+        <name>RAS_Styles</name>
+        <scoped_name>x_ouhs2_risk_asses_RAS_Styles</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2017-11-08 18:14:23</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>958df5f94f9a0300196cd0af0310c77e</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>RAS_Styles</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_ui_macro_958df5f94f9a0300196cd0af0310c77e</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2018-03-22 13:44:35</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">	
+	<!-- Include the UI scripts -->
+	<g:requires name="x_ouhs2_risk_asses.RAS_Functions.jsdbx" params="cache=$[jvar_stamp]" />
+	
+	<style type="text/css">
+		/* Hide the following 
+		input[id*="#u_does_the_data_set_include_any_of_the_following"] {display: none; visibility: hidden;}*/
+		#x_ouhs2_risk_asses_risk_assessment_services.u_status {background: orange;}
+		#x_ouhs2_risk_asses_risk_assessment_services.u_does_the_data_set_include_any_of_the_following {display: none;}
+		
+		/*
+		.annotation-wrapper {
+			color: #841617 !important;
+			background-color: transparent !important;
+			font-weight: 100 !important;
+			padding: 7px 15px 3px 15px !important;
+			border-bottom: 1px solid #841617 !important;
+			border-top: 0 none !important;
+		}
+		
+		HTML[data-doctype=true] input[type='radio'] {
+    margin-right: .25em;
+    margin-left: 1em;
+    margin-top: 0em;
+}
+		*/
+		
+		/*.form-field.input_controls {width: 30px !important; float: left !important;}*/
+		div[type="boolean"] {float: right; text-align: left; width: 95%;}
+		div[type="boolean"] .control-label {
+			text-align: left;
+			width: 100%;
+			padding: 6px 0 0;
+		}
+		div[type="boolean"] + .input_controls {
+			float: left;
+			width: 5%;
+		}
+		
+		.annotation-wrapper {
+		    font-weight: normal !important;
+			padding: 7px 15px 3px 15px !important;
+			margin-top: 20px !important;
+			<!-- background-color: #841617 !important;
+			border-bottom: 5px solid #B24445 !important; -->
+		}
+		
+		#Save {
+    color: #fff;
+    background-color: #278efc;
+    border-color: #0368d4;
+}
+		#sysverb_delete {
+		color: #fff;
+    background-color: #f95050;
+    border-color: #f71f1f;
+		}
+		
+/*	
+		div[type="choice"] {
+    width: 100%;
+    display: inline-block;
+}
+		
+		div[type="choice"] > label .control-label {
+    width: 100%;
+    text-align: left;
+}*/
+		
+		ul {margin: 0 0 0 35px;}
+		
+		/* Radio buttons */
+		.HSCRadioLabel {padding: 5px 5px 5px 0; margin-right: 15px;}
+		input[type="radio"].HSCRadio {margin: 0;}
+		
+		/* Check boxes */
+		.HSC_CB {opacity: 0}
+/* input[type="checkbox"] + label[for]:before { */
+		input[type="checkbox"] + .HSC_CBLabel {
+			cursor: pointer;
+		}
+.HSC_CBLabel:before {
+		font-family: "retina_icons";
+		content: "";
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    position: relative;
+    background: #f2f2f2;
+    padding: 0;
+		vertical-align: middle;
+		text-align: center;
+	margin-right: 10px;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,.07);
+    float: left;
+    cursor: pointer;
+}
+		.HSC_CB:checked + .HSC_CBLabel:before {
+			/*content: "&#10004;";*/
+			content: "";
+			font-weight: bold;
+		}
+	</style>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

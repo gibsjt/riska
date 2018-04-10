@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Available variables include:&#13;
+id - REQUIRED - string&#13;
+label - REQUIRED - string&#13;
+checked - boolean&#13;
+ value - string&#13;
+assignto - string</description>
+        <media_type/>
+        <name>Data_Type_Checkboxes</name>
+        <scoped_name>x_ouhs2_risk_asses_Data_Type_Checkboxes</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2018-01-31 17:05:40</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>881212744f849f00196cd0af0310c70d</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Data_Type_Checkboxes</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_ui_macro_881212744f849f00196cd0af0310c70d</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2018-02-02 15:43:53</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+<j:set var="jvar_tableName" value="x_ouhs2_risk_asses_risk_assessment_services" />
+	<div class="col-lg-6 col-xs-12">
+		<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="hipaa" label="HIPAA (Information about patients)" value="" replace="${jvar_tableName}.u_hipaa" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="pci" label="PCI (Information about Payment Cards)" value="" replace="${jvar_tableName}.u_pci" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="ferpa" label="FERPA (Infomation about students)" value="" replace="${jvar_tableName}.u_ferpa" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="hprd" label="Human Participant Research Data" value="" replace="${jvar_tableName}.u_hprd" />
+	</div>
+	
+	<div class="col-lg-6 col-xs-12">
+		<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="animal_research_data" label="Animal Research Data" value="" replace="${jvar_tableName}.u_animal_research_data" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="published_research_data" label="Published Research Data" value="" replace="${jvar_tableName}.u_published_research_data" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="nonpublic_university_data" label="Non-Public University Data" value="" replace="${jvar_tableName}.u_nonpublic_university_data" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="public_data" label="Public Data" value="" replace="${jvar_tableName}.u_public_data" />
+	</div>
+	
+	<!-- <g:ui_checkbox name="tbTest" value="" label="This is a test of the checkbox g:ui" /> -->
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

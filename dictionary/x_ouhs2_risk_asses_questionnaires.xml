@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Questionnaires" max_length="40" name="x_ouhs2_risk_asses_questionnaires" type="collection">
+        <element label="Business Unit" max_length="32" name="business_unit" reference="cmn_department" type="reference"/>
+        <element label="IS Owner" max_length="32" name="is_owner" reference="sys_user" type="reference"/>
+        <element label="IS Sponsor" max_length="32" name="is_sponsor" reference="sys_user" type="reference"/>
+        <element label="Product or System Name" mandatory="true" max_length="75" name="product_or_system_name" type="string"/>
+        <index name="index">
+            <element name="is_owner"/>
+        </index>
+        <index name="index2">
+            <element name="business_unit"/>
+        </index>
+        <index name="index3">
+            <element name="is_sponsor"/>
+        </index>
+    </element>
+</database>

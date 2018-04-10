@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>If HIPAA is selected change category to A.</description>
+        <field>u_hipaa</field>
+        <global>true</global>
+        <messages/>
+        <name>Set Category HIPAA</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	
+	g_form.setValue("u_category", setCategory());
+	
+// 	// new GlideAjax object referencing name of AJAX script include 
+// var ga = new GlideAjax("MyFavoritesAjax"); 
+// // add name parameter to define which function we want to call 
+// // method name in script include will be getFavorites
+// ga.addParam("sysparm_name","getFavorites");
+ 
+// // submit request to server, call ajaxResponse function with server response
+ 
+// ga.getXML(ajaxResponse);
+ 
+// function ajaxResponse(serverResponse) { 
+//   // get result element and attributes
+// 	alert("preresult = " + serverResponse.response);
+//   var result = serverResponse.responseXML.documentElement.selectNodes("result");
+// 	alert("result is " + result);
+//   var message = result[0].getAttribute("message");
+// 	alert("message is " + message);
+ 
+//   //check for message attribute and alert user
+//   if(message) alert(message);
+ 
+//   //build output to display on client for testing 
+//   var output = "";
+ 
+//   // get favorite elements 
+//   var favorites = serverResponse.responseXML.getElementsByTagName("favorite");
+//   for(var i = 0; i < favorites.length; i ++) { 
+//     var name = favorites[i].getAttribute("name");
+//     var value = favorites[i].getAttribute("value");
+//     output += name + " = " + value + "\n "; }
+ 
+//   alert(output); }
+	
+	
+	
+	
+	
+	
+// 	var ga = new GlideAjax("Set_Category");
+// 	ga.addParam('sysparm_name', 'setCategory');
+//  	ga.getXML(assignCategory);
+
+// 	var ga = new GlideAjax("ES_sA");
+// 	ga.addParam('sysparm_name', 'helloWorld');
+// 	ga.addParam('sysparm_user_name', 'Nathan');
+//  	ga.getXML(HelloWorldParse);
+	
+	/////////////////////////////////This calls the si successfully.
+// 	var ga = new GlideAjax("Set_Category");
+// 	ga.addParam('sysparm_name', 'setCategory');
+// 	//ga.addParam('sysparm_user_name', 'Nathan');
+//  	ga.getXML(HelloWorldParse2);
+	
+	
+	
+	//ga.getXMLAnswer('HellowWorldParse');
+	
+	//	ga.getXML('setCategory');
+	
+	// 	function assignCategory() {
+		// 		g_form.setValue('u_category', ga.getXMLAnswer('setCategory'));
+		// 	}
+	
+	function HelloWorldParse(response) {
+   var answer = response.responseXML.documentElement.getAttribute("answer");
+   alert(answer);
+}
+	
+	function HelloWorldParse2(response) {
+   var answer = response.responseXML.documentElement.getAttribute("answer");
+   alert(answer);
+}
+	
+	
+	function assignCategory(serverResponse) {
+		alert("about to result");
+//var result = serverResponse.responseXML.documentElement.getAttribute("answer");
+var result = serverResponse.response;
+//  				var result = serverResponse.responseText;
+		alert("result = " + result);
+	}
+// 		alert("script include: " + ga.getXMLAnswer('setCategory'));
+// 		alert("script include2: " + ga.getXML('setCategory'));
+		
+		// 	if (g_form.getBooleanValue('u_hipaa') == true)
+		// 		{
+			// 			g_form.setValue('u_category','Category A');
+			// 		}
+			// 	else if (g_form.getBooleanValue('u_pci') == true)
+			// 		{
+				// 			g_form.setValue('u_category','Category A');
+				// 		}
+				// 	else if (g_form.getBooleanValue('u_ferpa') == true)
+				// 		{
+					// 			g_form.setValue('u_category','Category A');
+					// 		}
+					// 	else if (g_form.getBooleanValue('u_hprd') == true)
+					// 		{
+						// 			g_form.setValue('u_category','Category A');
+						// 		}
+						// 	else if (g_form.getBooleanValue('u_animal_research_data') == true)
+						// 		{
+							// 			g_form.setValue('u_category','Category B');
+							// 		}
+							// 	else if (g_form.getBooleanValue('u_nonpublic_university_data') == true)
+							// 		{
+								// 			g_form.setValue('u_category','Category C');
+								// 		}
+								// 	else if (g_form.getBooleanValue('u_public_data') == true || g_form.getBooleanValue('u_published_research_data') == true)
+								// 		{
+									// 			g_form.setValue('u_category','Category D');
+									// 		}
+									// 	else {
+										// 		g_form.setValue('u_category', 'Not Defined');
+										// 	}
+									}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2017-12-04 23:00:15</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>37a01fca4ffec3407b92d49f0310c7c8</sys_id>
+        <sys_mod_count>82</sys_mod_count>
+        <sys_name>Set Category HIPAA</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_script_client_37a01fca4ffec3407b92d49f0310c7c8</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2017-12-14 20:37:12</sys_updated_on>
+        <table>x_ouhs2_risk_asses_risk_assessment_services</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

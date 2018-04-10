@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="RAS" max_length="40" name="x_ouhs2_risk_asses_ras" type="collection">
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="What department are you with?" mandatory="true" max_length="40" name="u_department" type="string"/>
+        <element label="The product requires application development, web development or database connec" max_length="40" name="u_development" type="boolean"/>
+        <element label="This product connects to the OUHSC network and/or communicates with any computer" max_length="40" name="u_network" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Product Name" max_length="75" name="u_product_name" type="string"/>
+        <element label="Requested For" mandatory="true" max_length="32" name="u_req_by" reference="sys_user" type="reference"/>
+        <element label="The IT Service Desk is expected to provide support for this product." max_length="40" name="u_sd_support" type="boolean"/>
+        <element label="This product interacts with sensitive data." max_length="40" name="u_sensitivedata" type="boolean"/>
+        <element label="Vendor Name" max_length="50" name="vendor_name" type="string"/>
+        <element label="Vendor Phone" max_length="20" name="vendor_phone" type="string"/>
+        <element label="Vendor Web Address" max_length="150" name="vendor_web_address" type="string"/>
+        <index name="index">
+            <element name="u_req_by"/>
+        </index>
+    </element>
+</database>

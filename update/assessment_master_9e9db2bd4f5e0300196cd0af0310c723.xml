@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="assessment_master">
+    <assessment_master action="INSERT_OR_UPDATE">
+        <assessment display_value="Product Review">029fbafd4f5e0300196cd0af0310c7ec</assessment>
+        <comments/>
+        <end_note/>
+        <introduction><![CDATA[<p>The Technology Product Review form is required for any technology-related product that is to be purchased for use on the OU Health Sciences Center campus. Complete the initial questions below. Additional questions will become available on this form if the answer to any of the initial questions is "yes." You may submit this form by selecting&nbsp;Order Now&nbsp;from the "shopping cart" section on the far right of the form. You will be provided with a summary/confirmation page that gives a link to this form should you need to provide additional information on this product in the future.</p>]]></introduction>
+        <name>Product Review</name>
+        <sys_class_name>assessment_master</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2017-11-08 22:54:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>9e9db2bd4f5e0300196cd0af0310c723</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Product Review</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>assessment_master_9e9db2bd4f5e0300196cd0af0310c723</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2017-11-08 23:01:35</sys_updated_on>
+    </assessment_master>
+    <sys_translated_text action="delete_multiple" query="documentkey=9e9db2bd4f5e0300196cd0af0310c723"/>
+</record_update>

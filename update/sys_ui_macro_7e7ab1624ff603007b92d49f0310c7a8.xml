@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>choice box with unordered list</description>
+        <media_type/>
+        <name>Choice - Does data include the following</name>
+        <scoped_name>x_ouhs2_risk_asses_Choice - Does data include the following</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2017-12-05 22:32:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>7e7ab1624ff603007b92d49f0310c7a8</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>Choice - Does data include the following</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_ui_macro_7e7ab1624ff603007b92d49f0310c7a8</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2018-01-31 17:15:33</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<!-- 	<g:requires name="jquery.min.jsdbx" />	 -->
+<!-- 	<g:requires name="jquery.bxslider.min.jsdbx" /> -->
+
+<!-- 	<j2:while> -->
+<!-- 	<g:evaluate> -->
+	<script>
+		
+		$j(document).ready(function(){
+		
+			$j("#does_the_data_set_include_any_of_the_following").change(function(){	
+				g_form.setValue('u_does_the_data_set_include_any_of_the_following', $j(this).val());
+			});
+		});
+	</script>
+<!-- 	</g:evaluate> -->
+<!-- 		</j2:while> -->
+	<label for="does_the_data_set_include_any_of_the_following" dir="ltr" class=" col-xs-12 col-md-12 col-lg-12" onclick="return labelClicked(this);"><span id="" title="" mandatory="false" class=" required-marker" oclass="" aria-label=""></span><span title="" class="label-text" data-html="false">Does the data set include any of the following</span></label>
+	<p>
+		<ul>
+			<li>Name</li>
+			<li>Street Address</li>
+			<li>City</li>
+			<li>County</li>
+			<li>First 3 of Zip Code</li>
+			<li>Telephone Number</li>
+			<li>Fax Number</li>
+			<li>E-mail Address</li>
+			<li>Social Security Number</li>
+			<li>Medical Record Number</li>
+			<li>Health Plan Beneficiary Number</li>
+			<li>Account Numbers</li>
+			<li>Certificate/license numbers</li>
+			<li>Vehicle Identifiers, serial numbers, including license plate numbers</li>
+			<li>Study device identifiers and serial numbers</li>
+			<li>Web URLs associated with participant</li>
+			<li>IP Addresses associated with participant</li>
+			<li>Biometric identifiers, including fingerprints and voiceprints</li>
+			<li>Full face photographic images and other comparable images</li>
+			<li>Any other unique identifying numbers, characteristics, or codes</li>
+		</ul>
+		
+	<select id="does_the_data_set_include_any_of_the_following" name="does_the_data_set_include_any_of_the_following" class="form-control">
+		<option value="">-- None --</option>
+		<option value="Yes">Yes</option>
+		<option value="No">No</option>
+	</select>
+	</p>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

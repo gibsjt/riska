@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="assessment_question_choice">
+    <assessment_question_choice action="INSERT_OR_UPDATE">
+        <misc>0</misc>
+        <order>200</order>
+        <question display_value="HIPAA (Information about Patients)">f54efe7d4f5e0300196cd0af0310c7e8</question>
+        <rec_misc>0</rec_misc>
+        <score>0</score>
+        <sys_class_name>assessment_question_choice</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2017-11-08 22:58:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>96eefebd4f5e0300196cd0af0310c76f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>assessment_question_choice_96eefebd4f5e0300196cd0af0310c76f</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2017-11-08 22:58:41</sys_updated_on>
+        <text/>
+        <value>No</value>
+    </assessment_question_choice>
+    <fx_price action="delete_multiple" query="id=96eefebd4f5e0300196cd0af0310c76f"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>96eefebd4f5e0300196cd0af0310c76f</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2017-11-08 22:58:41</sys_created_on>
+        <sys_id>33eeb2fd4f5e0300196cd0af0310c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2017-11-08 22:58:41</sys_updated_on>
+        <table>assessment_question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>96eefebd4f5e0300196cd0af0310c76f</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2017-11-08 22:58:41</sys_created_on>
+        <sys_id>f7eeb2fd4f5e0300196cd0af0310c728</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2017-11-08 22:58:41</sys_updated_on>
+        <table>assessment_question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

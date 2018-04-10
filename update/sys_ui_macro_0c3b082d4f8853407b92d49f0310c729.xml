@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Pass in values to render a radio button list and hide the default choice list from the form.&#13;
+Values:&#13;
+-groupid = id to assign to radio button list *required&#13;
+-grouplabel = radio button group label (&lt;legend&gt;)&#13;
+-selected = the value to be automatically selected for the radio buttons in this group&#13;
+-replace = if the radio button list has a selection, hide this SNow column/field and assign the selected value&#13;
+radiostyle = horizontal or vertical layout&#13;
+&#13;
+-radiobuttons = array of radio buttons and includes the following variables:&#13;
+--id = id to assign to radio button *required&#13;
+--label = *required&#13;
+--name = the name to use (this must be common among all the other radio buttons in the group so that when one is selected any other is deselected)&#13;
+--value = value to assign to radio button&#13;
+--class = CSS class to add to radio button&#13;
+--label_class = CSS class to add to the label&#13;
+</description>
+        <media_type/>
+        <name>Render_Radio_Buttons</name>
+        <scoped_name>x_ouhs2_risk_asses_Render_Radio_Buttons</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2018-02-02 15:06:53</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0c3b082d4f8853407b92d49f0310c729</sys_id>
+        <sys_mod_count>141</sys_mod_count>
+        <sys_name>Render_Radio_Buttons</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_ui_macro_0c3b082d4f8853407b92d49f0310c729</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2018-03-22 13:24:39</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:function groupid="REQUIRED" radiobuttons="REQUIRED" />
+	
+	
+		<fieldset id="${jvar_groupid}" class="radioFieldset">
+			<legend class="radioLegend">${jvar_grouplabel}</legend>
+		
+			<j:forEach items="${radiobuttons}" var="jvar_radio">
+				<g:evaluate jelly="true">
+					var id = jelly.jvar_radio.id;
+					var label = jelly.jvar_radio.label;
+					var name = jelly.jvar_radio.name;
+					var value = jelly.jvar_radio.value;
+					var radio_class = jelly.jvar_radio.class;
+					var label_class = jelly.jvar_radio.label_class;
+				</g:evaluate>
+				
+				<!-- TO DO - Could just set class instead of choose option -->
+				
+				<j:choose>
+						<j:when test="${jvar_radiostyle == 'horizontal'}">			
+							<input id="${id}" class="${radio_class} radioHorizontal" type="radio" name="${name}" value="${value}" />
+							<label for="${id}" class="${label_class}">${label}</label>
+						</j:when>
+						<j:when test="${jvar_radiostyle == 'vertical'}">			
+							<input id="${id}" class="${radio_class} radioVertical" type="radio" name="${name}" value="${value}" />
+							<label for="${id}" class="${label_class}">${label}</label>
+						</j:when>
+						<j:otherwise>
+						</j:otherwise>
+				</j:choose>
+				
+			</j:forEach>	
+		
+		</fieldset>
+
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

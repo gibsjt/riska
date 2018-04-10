@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Pass in values to render a checkbox and hide the default checkbox from the form.&#13;
+Values:&#13;
+id = id to assign to checkbox *required&#13;
+label = *required&#13;
+checked = true/false&#13;
+value = value to assign to checkbox&#13;
+replace = if the checkbox is checked, assign that value to this SNow column/field&#13;
+cb_class = CSS class to add to checkbox&#13;
+label_class = CSS class to add to the label&#13;
+</description>
+        <media_type/>
+        <name>Render_Checkbox</name>
+        <scoped_name>x_ouhs2_risk_asses_Render_Checkbox</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2018-01-11 20:34:29</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f72384664fa34f80196cd0af0310c76f</sys_id>
+        <sys_mod_count>261</sys_mod_count>
+        <sys_name>Render_Checkbox</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_ui_macro_f72384664fa34f80196cd0af0310c76f</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2018-03-22 19:57:17</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<!-- 	<g:function id="REQUIRED" label="REQUIRED" checked="false" value="" replace="" /> -->
+	<g:function id="REQUIRED" label="REQUIRED" />	
+	
+		<script>
+		$j(document).ready(function () {
+			var getReplacedValue = gel("${jvar_replace}").value;
+			$j("#${jvar_id}").val(getReplacedValue);
+			if(getReplacedValue === "true")
+			{
+				$j("#${jvar_id}").attr("checked", getReplacedValue);
+			}
+		});
+		</script>
+<!-- 	<p>id = ${jvar_id}, label = ${jvar_label}, replace = ${jvar_replace}, value=${jvar_value}, checked = ${jvar_checked}</p> -->
+	
+	<g:evaluate jelly="true">
+			<!-- var id = jelly.jvar_checkbox.id;
+			var value = jelly.jvar_checkbox.value;
+			var CBclass = jelly.jvar_checkbox.class;
+			var label = jelly.jvar_checkbox.label;
+			var labelClass = jelly.jvar_checkbox.label_class;
+			var replace = jelly.jvar_checkbox.replace; -->
+		
+		
+			<!-- var replacedValue = gel("x_ouhs2_risk_asses_risk_assessment_services.u_auth_pass_requirements").value; -->
+<!-- 			var getReplacedValue = gel("${jvar_replace}").value; -->
+<!-- 			var getReplacedValue = $j("#${replace}").val(); -->
+<!-- 			var getReplacedValue2 = document.getElementById("${replace}").value; -->
+		</g:evaluate>
+
+	<div class="col-xs-12 form-field input_controls checkboxContainer">			
+		<span class="input-group-checkbox">
+		<j:choose>
+			<j:when test="${jvar_checked == 'true'}">
+<!-- 				<p style="color: green;">checked == true</p> -->
+				<input type="checkbox" id="${jvar_id}" value="${jvar_cbValue}" class="checkbox pull-left ${jvar_css_class}" checked="checked" />
+				<label for="${jvar_id}" class="checkbox-label ${jvar_label_class}">${jvar_label} - ${jvar_replace}</label>
+			</j:when>
+			<!-- <j:when test="${getReplacedValue == 'true'}">
+				<input type="checkbox" id="${jvar_id}" value="${jvar_cbValue}" class="checkbox pull-left" checked="checked" />
+				<label for="${jvar_id}" class="checkbox-label">${jvar_label}</label>
+			</j:when> -->
+			<j:otherwise>
+<!-- 				<p style="color: green;">everything is false</p> -->
+				<input type="checkbox" id="${jvar_id}" class="checkbox pull-left ${jvar_cb_class}" />
+				<label for="${jvar_id}" class="checkbox-label ${jvar_label_class}">${jvar_label}</label>
+			</j:otherwise>
+		</j:choose>
+		</span>
+	</div>
+	
+	<script>
+		$j(document).ready(function () {
+			document.getElementById("element.${jvar_replace}").style.display = "none";
+<!-- 			document.getElementById(${jvar_id}).checked = gel("${jvar_replace}").value; -->
+<!-- 			document.getElementById(${jvar_id}).checked = ${jvar_getReplacedValue}; -->
+		
+			$j("#${jvar_id}").click(function () {
+				var isChecked = $j("#${jvar_id}").prop("checked");
+				g_form.setValue("${jvar_replace}", isChecked);
+			});
+		});
+	</script>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

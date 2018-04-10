@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Available variables include:&#13;
+id - REQUIRED - string&#13;
+label - REQUIRED - string&#13;
+checked - boolean&#13;
+ value - string&#13;
+assignto - string&#13;
+cb_class - string&#13;
+label_class - string</description>
+        <media_type/>
+        <name>Product_Checkboxes</name>
+        <scoped_name>x_ouhs2_risk_asses_Product_Checkboxes</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2018-01-11 22:30:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>9f7d14ea4fe34f80196cd0af0310c7d1</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Product_Checkboxes</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_ui_macro_9f7d14ea4fe34f80196cd0af0310c7d1</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2018-02-01 21:16:33</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+<j:set var="jvar_tableName" value="x_ouhs2_risk_asses_risk_assessment_services" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="network" cb_class="customCB" label_class="customLabel" label="This product connects to the OUHSC network and/or communicates with any computer" value="" replace="${jvar_tableName}.u_network" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="sensitivedata" label="This product interacts with sensitive data." value="" replace="${jvar_tableName}.u_sensitivedata" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="development" label="Will the product require application development, web development or database connectivity from HSC Information Technology?" value="" replace="${jvar_tableName}.u_development" />
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkbox.xml" id="sdsupport" label="The IT Service Desk is expected to provide support for this product." value="" replace="${jvar_tableName}.u_sdsupport" />
+	
+<!-- 	<g:ui_checkbox name="tbTest" value="" title="This is a test of the checkbox g:ui" class="myGUIclass" /> -->
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="sc_cat_item" relationship="" sys_domain="global" table="item_option_new" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>question_text</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="Default view">c24a47ea0c880140b7d5658083c00233</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>paige.duffey</sys_created_by>
+            <sys_created_on>2013-03-14 17:53:13</sys_created_on>
+            <sys_id>464a47ea0c880140b7d5658083c00233</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>paige.duffey</sys_updated_by>
+            <sys_updated_on>2013-03-14 17:53:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>type</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="Default view">c24a47ea0c880140b7d5658083c00233</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>paige.duffey</sys_created_by>
+            <sys_created_on>2013-03-14 17:53:13</sys_created_on>
+            <sys_id>c64a47ea0c880140b7d5658083c00233</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>paige.duffey</sys_updated_by>
+            <sys_updated_on>2013-03-14 17:53:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>order</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="Default view">c24a47ea0c880140b7d5658083c00233</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>paige.duffey</sys_created_by>
+            <sys_created_on>2013-03-14 17:53:13</sys_created_on>
+            <sys_id>4a4a47ea0c880140b7d5658083c00233</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>paige.duffey</sys_updated_by>
+            <sys_updated_on>2013-03-14 17:53:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>item_option_new</name>
+            <parent>sc_cat_item</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:22:25</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>c608d0d54f08df00196cd0af0310c756</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>item_option_new</sys_name>
+            <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+            <sys_update_name>sys_ui_list_item_option_new_sc_cat_item_null</sys_update_name>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 21:22:25</sys_updated_on>
+            <sys_user display_value="Nathan Mobley [A] (Nathan.Mobley)">34676b364f3de6402893ecee0210c753</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

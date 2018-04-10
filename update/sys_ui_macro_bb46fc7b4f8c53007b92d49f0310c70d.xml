@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Available variables include:&#13;
+id - REQUIRED - string&#13;
+label - REQUIRED - string&#13;
+checked - boolean&#13;
+ value - string&#13;
+assignto - string&#13;
+input_class - string&#13;
+label_class - string</description>
+        <media_type/>
+        <name>Checkboxes Mass Sub</name>
+        <scoped_name>x_ouhs2_risk_asses_Checkboxes Mass Sub</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>Nathan.Mobley</sys_created_by>
+        <sys_created_on>2018-02-09 17:59:30</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>bb46fc7b4f8c53007b92d49f0310c70d</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Checkboxes Mass Sub</sys_name>
+        <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+        <sys_update_name>sys_ui_macro_bb46fc7b4f8c53007b92d49f0310c70d</sys_update_name>
+        <sys_updated_by>Nathan.Mobley</sys_updated_by>
+        <sys_updated_on>2018-03-30 20:15:26</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+	<input id="testcb" class="HSC_CB" type="checkbox" name="vehicle" value="Bike"></input>
+	<label for="testcb" class="HSC_CBLabel">Test CB</label>
+	<br /><br />
+	
+<j:set var="jvar_tableName" value="x_ouhs2_risk_asses_risk_assessment_services" />
+	<g:evaluate object="true">
+			var replacingCheckboxes = [
+			<!-- { id: 'cb1', value: 'cb1val', label: 'CB 1 test', name: 'cb1name', class: 'HSC_CB', label_class: 'HSC_CBLabel', replace: 'u_auth_pass_requirements' }, -->
+			{ id: 'cb2', value: 'cb2val', label: 'CB 2 test', name: 'cb2name', class: 'HSC_CB', label_class: 'HSC_CBLabel', replace: '${jvar_tableName}.u_auth_pass_requirements', checked: 'false' },
+			{ id: 'cb3', value: 'cb3val', label: 'CB 3 test', name: 'cb3name', class: 'HSC_CB', label_class: 'HSC_CBLabel', replace: 'testcb', checked: 'true' }
+		];
+			replacingCheckboxes;			
+	</g:evaluate>
+	
+	<g:call function="x_ouhs2_risk_asses_Render_Checkboxes_Mass_Sub.xml" checkboxes="${replacingCheckboxes}" />
+	
+<!-- 	<g:ui_checkbox name="tbTest" value="" title="This is a test of the checkbox g:ui" class="myGUIclass" /> -->
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

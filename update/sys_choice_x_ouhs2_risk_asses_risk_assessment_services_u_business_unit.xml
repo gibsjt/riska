@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_business_unit" table="x_ouhs2_risk_asses_risk_assessment_services" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Academic Affairs and Faculty Development</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>0</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:36:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ba1bdc594f08df00196cd0af0310c7ea</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:40</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Administration and Finance</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>1</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:37:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d76b50994f08df00196cd0af0310c74a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:42</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bird Library</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>2</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:37:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a97b90994f08df00196cd0af0310c749</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:42</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>College of Allied Health</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>3</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:37:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>5f7bd0994f08df00196cd0af0310c7ec</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:42</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>College of Dentristy</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>4</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:37:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d98b1c194f08df00196cd0af0310c7e2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:42</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>College of Medicine</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>5</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:37:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>9b8b94994f08df00196cd0af0310c740</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:42</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>College of Pharmacy</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>6</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:37:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>599b14994f08df00196cd0af0310c791</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:41</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>College of Public Health</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>7</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:38:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>7dab14994f08df00196cd0af0310c797</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:41</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Graduate College</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>8</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:38:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ababd4994f08df00196cd0af0310c7c3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:41</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Information Technology</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>9</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:38:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a1bb94994f08df00196cd0af0310c7dc</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:41</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Office of Compliance</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>10</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:38:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>2fbb18994f08df00196cd0af0310c70f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:41</sys_updated_on>
+            <value>11</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Office of the Senior Vice President and Provost</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>11</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:38:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>dbcbd0994f08df00196cd0af0310c783</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:41</sys_updated_on>
+            <value>12</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>School of Community Medicine - Tulsa</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>12</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:39:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f6dbd4994f08df00196cd0af0310c7ca</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:41</sys_updated_on>
+            <value>13</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Stephenson Cancer Center</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>13</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:39:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>cdeb54994f08df00196cd0af0310c705</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:40</sys_updated_on>
+            <value>14</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>University Relations</label>
+            <language>en</language>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sequence>14</sequence>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:39:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ffebd8994f08df00196cd0af0310c77f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:40</sys_updated_on>
+            <value>15</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_business_unit</element>
+            <name>x_ouhs2_risk_asses_risk_assessment_services</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Nathan.Mobley</sys_created_by>
+            <sys_created_on>2018-02-01 21:36:48</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>345bd8194f08df00196cd0af0310c7da</sys_id>
+            <sys_mod_count>34</sys_mod_count>
+            <sys_name>u_business_unit</sys_name>
+            <sys_package display_value="Risk Assessment Services" source="x_ouhs2_risk_asses">2e9192554fc64b80196cd0af0310c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Risk Assessment Services">2e9192554fc64b80196cd0af0310c7b7</sys_scope>
+            <sys_update_name>sys_choice_x_ouhs2_risk_asses_risk_assessment_services_u_business_unit</sys_update_name>
+            <sys_updated_by>Nathan.Mobley</sys_updated_by>
+            <sys_updated_on>2018-02-01 22:40:42</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

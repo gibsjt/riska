@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Risk Assessment Services" max_length="40" name="x_ouhs2_risk_asses_risk_assessment_services" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Requestor Phone Number" max_length="40" name="requestor_phone_number" type="string"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="This solution requires 24/7 uptime" max_length="40" name="u_24_7_uptime" type="boolean"/>
+        <element label="Animal Research Data" max_length="40" name="u_animal_research_data" type="boolean"/>
+        <element label="Application Server" max_length="40" name="u_application_server" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Application Server Name" max_length="40" name="u_application_server_name" type="string"/>
+        <element label="Associated Information Systems" max_length="500" name="u_associated_information_systems" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Yes" label="Date/Time of activity" mandatory="true" max_length="40" name="u_audit_activity_datetime" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Description of attempted or completed activity" mandatory="true" max_length="40" name="u_audit_activity_desc" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="If the Information System is unable to generate new log data, what action is con" mandatory="true" max_length="40" name="u_audit_activity_error_action" type="string">
+            <choice>
+                <element label="Overwrite" sequence="0" value="Overwrite"/>
+                <element label="Shutdown System" sequence="1" value="Shutdown System"/>
+                <element label="Alert Administrator" sequence="2" value="Alert Administrator"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Origin of Activity" mandatory="true" max_length="40" name="u_audit_activity_origin" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Identification of user performing activity" mandatory="true" max_length="40" name="u_audit_activity_userid" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element label="Application Server" max_length="40" name="u_audit_application_server" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Are log details captured for the following auditable events:" mandatory="true" max_length="40" name="u_audit_auditable_events" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element label="Database Server" max_length="40" name="u_audit_database_server" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Are audit logs stored in an active and searchable state for 90 days, and archive" mandatory="true" max_length="40" name="u_audit_log_archives" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="How frequently are system and/or application logs reviewed to identify inappropr" mandatory="true" max_length="40" name="u_audit_log_review_freq" type="string">
+            <choice>
+                <element label="Daily" sequence="0" value="Daily"/>
+                <element label="Weekly" sequence="1" value="Weekly"/>
+                <element label="Monthly" sequence="2" value="Monthly"/>
+                <element label="Quarterly" sequence="3" value="Quarterly"/>
+                <element label="Annually" sequence="4" value="Annually"/>
+                <element label="Other" sequence="5" value="Other"/>
+            </choice>
+        </element>
+        <element label="Medical Device" max_length="40" name="u_audit_medical_device" type="boolean"/>
+        <element label="Mobile Device" max_length="40" name="u_audit_mobile_device" type="boolean"/>
+        <element label="Other" max_length="40" name="u_audit_other" type="boolean"/>
+        <element label="Third-Party Data Sharing Organization" max_length="40" name="u_audit_third_party_sharing" type="boolean"/>
+        <element label="Web Server" max_length="40" name="u_audit_web_server" type="boolean"/>
+        <element label="Workstation Application" max_length="40" name="u_audit_workstation_application" type="boolean"/>
+        <element choice="3" label="Are accounts locked out after at least five (5) failed logon attempts?" mandatory="true" max_length="40" name="u_auth_accounts_locked" type="boolean">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Does the technology solution allow any actions without requiring authentication?" mandatory="true" max_length="40" name="u_auth_allow_no_auth" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Details" max_length="300" name="u_auth_allow_no_auth_details" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Does the solution allow OUHSC to configure a Logon Banner informing users of the" mandatory="true" max_length="40" name="u_auth_banner" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Destination IP Address" max_length="40" name="u_auth_dest_ip" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Encryption Used" max_length="40" name="u_auth_encryption" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Network Protocol Ports Used" max_length="40" name="u_auth_network_protocol_ports" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Is the technology solution capable of meeting the following password requirement" mandatory="true" max_length="40" name="u_auth_password_requirements" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element label="The technology solution is capable of meeting the following password requirement" max_length="40" name="u_auth_pass_requirements" type="boolean"/>
+        <element choice="3" label="Does the solution comply with OUHSC Portable Computing Device Security Policy?" mandatory="true" max_length="40" name="u_auth_portable_policy" type="boolean">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element label="Remote access to this solution will be provided." max_length="40" name="u_auth_remote_access" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="How will remote access be secured?" max_length="40" name="u_auth_remote_access_secured" type="string">
+            <choice>
+                <element label="HTTPS" sequence="0" value="HTTPS"/>
+                <element label="VPN" sequence="1" value="VPN"/>
+                <element label="Video Conference" sequence="2" value="Video Conference"/>
+                <element label="SSH" sequence="3" value="SSH"/>
+                <element label="Other" sequence="4" value="Other"/>
+                <element label="N/A" sequence="5" value="N/A"/>
+            </choice>
+        </element>
+        <element choice="3" label="Will this solution require a service account?" max_length="40" name="u_auth_service_account" type="boolean">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element label="All users are provided with a unique user ID (including IT administrators, emplo" max_length="40" name="u_auth_users_unique_id" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Are all users provided with a unique user ID (including IT administrators, emplo" mandatory="true" max_length="40" name="u_auth_user_unique_id" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element label="A Business Associate Agreement will be required before the Information System ca" max_length="40" name="u_baa" read_only="true" type="boolean"/>
+        <element choice="1" label="Pursuant to local laws, regulations, ethics and contractual constraints are all" max_length="40" name="u_background_verification" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Have you implemented backup or redundancy mechanisms to ensure compliance with r" max_length="40" name="u_backup_mechanisms" type="choice">
+            <choice/>
+        </element>
+        <element label="Backup Strategy" max_length="500" name="u_backup_strategy" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="As the service provider, does your organization have procedures established for " mandatory="true" max_length="40" name="u_best_practices" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element choice="1" label="Have you experienced any security or privacy breaches in the past twelve (12) mo" max_length="40" name="u_breaches" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Is a formal disciplinary or sanction policy established for employees who have v" max_length="40" name="u_breach_disciplinary_policy" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Who is responsible for breach notification in the event of a security or privacy" max_length="40" name="u_breach_notification" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Are business continuity plans subject to test at planned intervals or upon signi" max_length="40" name="u_business_cont_plans_tests" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="u_auth_accounts_locked" label="Business Unit" max_length="40" name="u_business_unit" type="choice">
+            <choice>
+                <element label="Academic Affairs and Faculty Development" sequence="0" value="1"/>
+                <element label="Administration and Finance" sequence="1" value="2"/>
+                <element label="Bird Library" sequence="2" value="3"/>
+                <element label="College of Allied Health" sequence="3" value="4"/>
+                <element label="College of Dentristy" sequence="4" value="5"/>
+                <element label="College of Medicine" sequence="5" value="6"/>
+                <element label="College of Pharmacy" sequence="6" value="7"/>
+                <element label="College of Public Health" sequence="7" value="8"/>
+                <element label="Graduate College" sequence="8" value="9"/>
+                <element label="Information Technology" sequence="9" value="10"/>
+                <element label="Office of Compliance" sequence="10" value="11"/>
+                <element label="Office of the Senior Vice President and Provost" sequence="11" value="12"/>
+                <element label="School of Community Medicine - Tulsa" sequence="12" value="13"/>
+                <element label="Stephenson Cancer Center" sequence="13" value="14"/>
+                <element label="University Relations" sequence="14" value="15"/>
+            </choice>
+        </element>
+        <element default="Undetermined" label="Category" max_length="15" name="u_category" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="HIPAA (Information about Patients)" mandatory="true" max_length="40" name="u_choice_hipaa" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="PCI (Information about Payment Cards)" mandatory="true" max_length="40" name="u_choice_pci" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element choice="1" label="How often are Contingency Plans tested for effectiveness?" max_length="40" name="u_contingency_plan_tests_freqency" type="choice">
+            <choice/>
+        </element>
+        <element label="Database Server" max_length="40" name="u_database_server" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Database Server Name" max_length="40" name="u_database_server_name" type="string"/>
+        <element label="Data Destination IP Address" max_length="20" name="u_data_destination_ip_address" type="string"/>
+        <element label="Data Source IP Address" max_length="25" name="u_data_source_ip_address" type="string"/>
+        <element label="Data Storage Location" max_length="250" name="u_data_storage_location" type="string"/>
+        <element label="What department are you with?" mandatory="true" max_length="32" name="u_department" reference="cmn_department" type="reference"/>
+        <element label="The product requires application development, web development or database connec" max_length="40" name="u_development" type="boolean"/>
+        <element choice="1" label="Do you have a documented security incident response plan?" max_length="40" name="u_documented_security_response_plan" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Does the data set include any of the following:" max_length="40" name="u_does_the_data_set_include_any_of_the_following" type="string"/>
+        <element choice="1" label="Do you document employee acknowledgment of training they have completed?" max_length="40" name="u_employee_training_documented" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Are roles and responsibilities for following performing employment termination o" max_length="40" name="u_employment_change_documented" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Will the Information System be stored in the OUHSC Data Center?" max_length="40" name="u_external" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Has the Business Unit documented a Facility Security Plan?" max_length="40" name="u_external_facility_security_plan" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Is access monitored for unauthorized access?" max_length="40" name="u_external_unauthorized_monitoring" type="choice">
+            <choice/>
+        </element>
+        <element label="FERPA (Infomation about students)" max_length="40" name="u_ferpa" type="boolean"/>
+        <element label="This solution will exchange data with other Information Systems (e.g., E-Mail, D" max_length="40" name="u_file_exchanges" type="boolean"/>
+        <element label="File Exchange Format" max_length="25" name="u_file_exchange_format" type="string"/>
+        <element label="HIPAA (Information about patients)" max_length="40" name="u_hipaa" type="boolean"/>
+        <element label="What was the date of your last workforce education specific to HIPAA Compliance?" mandatory="true" max_length="40" name="u_hipaa_compliance_date" type="glide_date"/>
+        <element label="Human Participant Research Data" max_length="40" name="u_hprd" type="boolean"/>
+        <element label="HTML baa" max_length="65536" name="u_html_baa" type="html"/>
+        <element choice="1" label="ISDC Category" max_length="40" name="u_isdc_category" read_only="true" type="choice">
+            <choice>
+                <element label="Category A" value="Category A"/>
+                <element label="Category B" value="Category B"/>
+                <element label="Category C" value="Category C"/>
+                <element label="Category D" value="Category D"/>
+            </choice>
+        </element>
+        <element label="This Information System will employ OUHSC's Active Directory authentication serv" max_length="40" name="u_is_ad" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="500" name="u_is_ad_notes" type="string"/>
+        <element label="IS Owner" mandatory="true" max_length="32" name="u_is_owner" reference="sys_user" type="reference"/>
+        <element label="IS Sponsor" mandatory="true" max_length="32" name="u_is_sponsor" reference="sys_user" type="reference"/>
+        <element choice="1" label="Do you conduct local operating-system layer vulnerability scans regularly?" max_length="40" name="u_local_op_scans" type="choice">
+            <choice/>
+        </element>
+        <element label="Please provide details about your vulnerability management practices" max_length="500" name="u_local_op_scans_details" type="string"/>
+        <element choice="1" label="Do you have anti-malware programs installed on all information systems which sup" max_length="40" name="u_malware_installed" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="If media is transported, are procedures documented to ensure consistent control" max_length="40" name="u_media_transported_documented_procedures" type="choice">
+            <choice/>
+        </element>
+        <element label="Medical Device" max_length="40" name="u_medical_device" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Medical Device Name" max_length="40" name="u_medical_device_name" type="string"/>
+        <element label="Mobile Device" max_length="40" name="u_mobile_device" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Mobile Device Name" max_length="40" name="u_mobile_device_name" type="string"/>
+        <element label="This product connects to the OUHSC network and/or communicates with any computer" max_length="40" name="u_network" type="boolean"/>
+        <element label="Network Protocol Ports Used" max_length="20" name="u_network_protocol_ports_used" type="string"/>
+        <element label="Non-Public University Data" max_length="40" name="u_nonpublic_university_data" type="boolean"/>
+        <element label="Other" max_length="40" name="u_other" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Other Name" max_length="40" name="u_other_name" type="string"/>
+        <element label="PCI (Information about Payment Cards)" max_length="40" name="u_pci" type="boolean"/>
+        <element choice="1" label="Do you conduct network and/or application penetration tests as prescribed by ind" max_length="40" name="u_penetration_testing" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Physical location" max_length="250" name="u_physical_location" type="string">
+            <choice>
+                <element label="OUHSC Data Center" sequence="0" value="OUHSC Data Center"/>
+                <element label="External Host or Cloud Provider" sequence="1" value="External Host or Cloud Provider"/>
+                <element label="Other" sequence="2" value="Other"/>
+            </choice>
+        </element>
+        <element label="When were your privacy and security policies last updates?" max_length="40" name="u_privacy_security_policies_updated" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="500" name="u_productdesc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Product or System Name" max_length="40" name="u_productname" type="string"/>
+        <element label="Public Data" max_length="40" name="u_public_data" type="boolean"/>
+        <element label="Published Research Data" max_length="40" name="u_published_research_data" type="boolean"/>
+        <element label="New Reference" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_req_by" reference="sys_user" type="reference"/>
+        <element choice="1" label="Have OUHSC retention requirements been identified?" max_length="40" name="u_retention_requirements" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Are vulnerabilities, risks and other security weaknesses and remedial actions do" max_length="40" name="u_risks_documented_with_plan" type="choice">
+            <choice/>
+        </element>
+        <element label="The IS Owner has documented and implemented procedures for the authorization, es" max_length="40" name="u_scra_is_auth_est_mod_removal" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="500" name="u_scra_is_auth_est_mod_removal_notes" type="string"/>
+        <element label="The IS Owner has documented a Data Management Plan to indicate the phases of Res" max_length="40" name="u_scra_is_data_management_plan" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="500" name="u_scra_is_data_management_plan_notes" type="string"/>
+        <element label="The IT Service Desk is expected to provide support for this product." max_length="40" name="u_sdsupport" type="boolean"/>
+        <element choice="1" label="Do you support secure deletion (ex. degaussing / cryptographic wiping) of archiv" max_length="40" name="u_secure_deletion" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="How often do employees receive Security Awareness Training?" mandatory="true" max_length="40" name="u_security_training_freq" type="string">
+            <choice>
+                <element label="Daily" sequence="0" value="Daily"/>
+                <element label="Weekly" sequence="1" value="Weekly"/>
+                <element label="Monthly" sequence="2" value="Monthly"/>
+                <element label="Quarterly" sequence="3" value="Quarterly"/>
+                <element label="Annually" sequence="4" value="Annually"/>
+                <element label="Other" sequence="5" value="Other"/>
+            </choice>
+        </element>
+        <element label="Security Used During Transmission" max_length="25" name="u_security_used_during_transmission" type="string"/>
+        <element label="This product interacts with sensitive data." max_length="40" name="u_sensitivedata" type="boolean"/>
+        <element choice="1" label="Do you have controls in place to detect source code security defects for any out" max_length="40" name="u_source_code_security_defects" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Pending" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+            <choice>
+                <element label="Pending" sequence="0" value="Pending"/>
+                <element label="In Review" sequence="1" value="In Review"/>
+                <element label="Approved" sequence="2" value="Approved"/>
+                <element label="Rejected" sequence="3" value="Rejected"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Yes" label="Is OUHSC data on shared storage medium encrypted?" mandatory="true" max_length="40" name="u_storage_encrypted" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element choice="1" label="Is all removable media containing Category A or Category B Data marked during tr" max_length="40" name="u_storage_removable_cat_a_b_marked_transport" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Will any OUHSC data reside on removable storage medium such as flash drives, bac" max_length="5" name="u_storage_reside_on_removable" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-- None --" label="Will any OUHSC data reside on shared storage devices such as a SAN or NAS?" mandatory="true" max_length="40" name="u_storage_san_nas" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+                <element label="N/A" sequence="2" value="N/A"/>
+            </choice>
+        </element>
+        <element label="The vendor will require remote connectivity to provide support for this system" max_length="40" name="u_the_vendor_will_require_remote_connectivity_to_provide_support_for_this_system" type="boolean"/>
+        <element label="Third-Party Data Sharing Organization" max_length="40" name="u_third_party_data_sharing" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Third-Party Data Sharing Organization Name" max_length="40" name="u_third_party_data_sharing_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Details" max_length="255" name="u_u_auth_pass_requirements_details" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Name" max_length="40" name="u_vendorname" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Phone" max_length="40" name="u_vendorphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Web Address" max_length="40" name="u_vendorurl" type="string"/>
+        <element choice="1" label="Are all visitors required to show proper identification and sign-in prior to gai" max_length="40" name="u_visitors_id_for_cat_a_b" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Are all authentication credentials protected when stored using hashing or encryp" max_length="40" name="u_web_app_credentials_encrypted" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Are session IDs invalidated during logout?" max_length="40" name="u_web_app_session_logout" type="choice">
+            <choice/>
+        </element>
+        <element label="Web Server" max_length="40" name="u_web_server" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Web Server Name" max_length="40" name="u_web_server_name" type="string"/>
+        <element label="Workstation Application" max_length="40" name="u_workstation_app" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Workstation Application Name" max_length="40" name="u_workstation_app_name" type="string"/>
+        <index name="index">
+            <element name="u_department"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_2"/>
+        </index>
+        <index name="index3">
+            <element name="u_req_by"/>
+        </index>
+        <index name="index4">
+            <element name="u_is_owner"/>
+        </index>
+        <index name="index5">
+            <element name="u_is_sponsor"/>
+        </index>
+    </element>
+</database>
